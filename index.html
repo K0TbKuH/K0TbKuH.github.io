@@ -21,9 +21,7 @@
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:image" content="./assets/og_preview.jpg" />
 <link rel="icon" href="./assets/favicon_source.png" />
-<meta name="ext-resource-dependency" content="./assets/hero_splash.png" />
 <meta name="ext-resource-dependency" content="./assets/main_menu.png" />
-<meta name="ext-resource-dependency" content="./assets/besties_screen.png" />
 <meta name="ext-resource-dependency" content="./assets/board_midgame.png" />
 <meta name="ext-resource-dependency" content="./assets/og_preview.jpg" />
 <meta name="ext-resource-dependency" content="./assets/creature_01_beetle.webp" />
@@ -78,7 +76,7 @@
   <p style="margin:0; max-width:640px; text-align:center; font-size:clamp(16px,1.8vw,20px); color:#ffe0a0; font-weight:600; line-height:1.5;">Connect cute animals on a beautiful jungle board.</p>
   <div style="display:flex; flex-wrap:wrap; justify-content:center; align-items:flex-end; gap:clamp(24px,4vw,48px);">
     <img src="./assets/board_midgame.png" alt="Chain Blast gameplay board with creatures placed" style="width:min(340px,80vw); border-radius:26px; box-shadow:0 20px 40px rgba(0,0,0,.4); animation: floatSlow 6s ease-in-out infinite;" />
-    <img src="./assets/besties_screen.png" alt="Bestie creature collection screen" style="width:min(300px,72vw); border-radius:26px; box-shadow:0 20px 40px rgba(0,0,0,.4); animation: floatSlow 7s ease-in-out infinite 1s;" />
+    <img src="./assets/goals_screen.png" alt="Daily goals and rewards screen" style="width:min(300px,72vw); border-radius:26px; box-shadow:0 20px 40px rgba(0,0,0,.4); animation: floatSlow 7s ease-in-out infinite 1s;" />
   </div>
 </section>
 
@@ -172,9 +170,7 @@ class Component extends DCLogic {
   state = { lightboxOpen: false, lightboxIndex: 0 };
 
   gallery = [
-    { src: './assets/hero_splash.png', label: 'Jungle path title screen' },
     { src: './assets/main_menu.png', label: 'Main menu' },
-    { src: './assets/besties_screen.png', label: 'Bestie collection' },
     { src: './assets/board_midgame.png', label: 'Live game board' },
     { src: './assets/goals_screen.png', label: 'Daily goals & rewards' },
     { src: './assets/tutorial_tip.png', label: 'In-game tutorial tips' },
