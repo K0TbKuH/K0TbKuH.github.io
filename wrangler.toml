@@ -1,0 +1,14 @@
+name = "chainblast-landing"
+compatibility_date = "2026-06-01"
+
+[assets]
+directory = "."
+not_found_handling = "404-page"
+
+[[routes]]
+pattern = "chain-blast.com"
+custom_domain = true
+
+[[routes]]
+pattern = "www.chain-blast.com"
+custom_domain = true
