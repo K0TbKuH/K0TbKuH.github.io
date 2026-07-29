@@ -4,6 +4,13 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="base:app_id" content="6a55e2c743c8a2396c2e3d43" />
+<!-- Second Base App registration (base.chain-blast.com's app, app_id 6a66c8318ce641820ba1743f) —
+     added here as a diagnostic: base.chain-blast.com serves this exact tag correctly already
+     (confirmed via raw HTTP fetch) but still fails Base's domain verification with a generic
+     error. Testing whether that app verifies once its registered domain (Base dashboard) is
+     repointed to chain-blast.com instead — if this domain's already-proven verification track
+     record lets it pass, the problem is specific to base.chain-blast.com, not this app_id. -->
+<meta name="base:app_id" content="6a66c8318ce641820ba1743f" />
 <title>Chain Blast — Colorful Puzzle Adventure</title>
 <script src="./support.js"></script>
 </head>
@@ -11,6 +18,7 @@
 <template id="__bundler_thumbnail"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200"><rect width="200" height="200" fill="#2a6e1e"/><text x="100" y="95" font-size="34" font-family="sans-serif" font-weight="700" fill="#ffd88a" text-anchor="middle">Chain</text><text x="100" y="135" font-size="34" font-family="sans-serif" font-weight="700" fill="#ff8a33" text-anchor="middle">Blast</text></svg></template>
 <x-dc>
 <helmet>
+<meta name="base:app_id" content="6a55e2c743c8a2396c2e3d43" />
 <title>Chain Blast — Colorful Puzzle Adventure</title>
 <meta name="description" content="Connect cute jungle animals, build huge chains, and unlock stronger creatures in Chain Blast — a relaxing endless match puzzle game." />
 <meta property="og:title" content="Chain Blast — Colorful Puzzle Adventure" />
